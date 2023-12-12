@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   template: `
     <div class="cont">
     <h1>Hello {{title}}!</h1>
-    <p>Env variable from .env: <b>{{ env }}</b></p>
+    <p>Env variable from .env => : <b>{{ env }}</b></p>
     </div>
   `,
 })
