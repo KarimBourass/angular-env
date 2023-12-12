@@ -1,0 +1,9 @@
+version: "2.1"
+services:
+
+  angular-env:
+    container_name: angular-env
+    restart: always
+    build: ./
+    ports:
+      - 80:80
