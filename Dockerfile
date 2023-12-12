@@ -1,5 +1,8 @@
-### STAGE 1: Build ###
 FROM node:16.13-alpine AS build
+
+ARG NG_ENV
+ENV NG_ENV=$NG_ENV
+
 ARG ENV=production
 WORKDIR /usr/src/app
 COPY package.json package-lock.json ./
