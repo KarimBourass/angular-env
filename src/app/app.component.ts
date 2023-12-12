@@ -2,9 +2,15 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
+  template: `
+    <div class="cont">
+    <h1>Hello {{title}}!</h1>
+    <p>Env variable from .env: <b>{{ env }}</b></p>
+    </div>
+  `,
 })
 export class AppComponent {
   title = 'angular-env';
+  env = 'test';
 }
