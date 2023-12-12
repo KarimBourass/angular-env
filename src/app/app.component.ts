@@ -12,5 +12,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-env';
-  env = 'test';
+  env = import.meta.env['NG_ENV'];
 }

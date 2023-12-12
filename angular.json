@@ -32,7 +32,11 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [],
+            "ngxEnv": {
+              "prefix": "NG_",
+              "root": "../../"
+            }
           },
           "configurations": {
             "production": {
